@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Platforms>AnyCPU;x64</Platforms>
+		<PublishAot>true</PublishAot>
+		<PublishTrimmed>true</PublishTrimmed>
+
+
+		<SignAssembly>True</SignAssembly>
+
+		<!-- include dyn .dll AND managed .dll (comptatibility) -->
+		<IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+
+		<!-- publish type -->
+		<PublishAot>true</PublishAot>
+		<PublishReadyToRun>false</PublishReadyToRun>
+		<PublishSingleFile>false</PublishSingleFile>
+
+		<!-- trimm assembly (reduce exe size) -->
+		<PublishTrimmed>true</PublishTrimmed>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="MegaApiClient" Version="1.10.3" />
+	</ItemGroup>
+
+</Project>
+
+
+
+
